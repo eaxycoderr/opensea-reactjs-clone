@@ -1,0 +1,466 @@
+.assets {
+    padding-top: 75px;
+}
+
+.assetsHeader {
+    width: 100%;
+    padding: 0px 32px;
+    left: 0;
+    right: 0;
+    top: 75px;
+    min-height: 50px;
+    width: 100%;
+    height: 66px;
+    position: sticky;
+    z-index: 40;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+
+}
+
+#dark .assetsHeader {
+    background-color: #202324;
+}
+
+.inAssetsHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inAhL button, .aMcHeader button {
+    background: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(4, 17, 29);
+    cursor: pointer;
+}
+
+#dark .inAhL button, #dark .aMcHeader button {
+    background-color: #202324;
+    color: rgb(255, 255, 255);
+}
+
+#dark .inAhL button:hover:not([disabled]),
+#dark .aMcHeader button:hover:not([disabled]) {
+    background-color: rgb(76, 80, 92);
+}
+
+.inAhL button:hover, .aMcHeader button:hover {
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+    transition: box-shadow 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+    transition: .3s ease-in-out;
+}
+
+.inAhR {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inAhRL {
+    position: relative;
+}
+
+.inAhRLuP {
+    width: auto;
+    height: 48px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px;
+    padding-right: 20px;
+    padding-left: 24px;
+    border-radius: 10px;
+    border: 2px solid rgb(229, 232, 235);
+    cursor: pointer;
+    position: relative;
+    transition: .2s ease-in-out;
+}
+
+#dark .inAhRLuP {
+    border: 2px solid rgb(76, 80, 92);
+}
+
+#dark .inAhRLuP:hover {
+    border: 2px solid #788a9ccb;
+}
+
+.inAhRLuP input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.sortByDropDown {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 48px;
+    z-index: 9999;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(4, 17, 29);
+    overflow-y: auto;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+#dark .sortByDropDown{
+    background-color: rgb(48, 51, 57);
+    color: rgb(255, 255, 255);
+}
+.sortByDropDown ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sortByDropDown ul li {
+    padding: 16px;
+    border-bottom: 1px solid rgb(229, 232, 235);
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+#dark .sortByDropDown ul li {
+    border-bottom: 1px solid rgb(21, 27, 34);
+}
+
+.sortByDropDown ul li:hover {
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+}
+.sortByDropDown ul li:last-child{
+    border: none;
+}
+#dark .sortByDropDown ul li:hover{
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    background-color: rgb(38, 43, 47);
+}
+.inAhLbtns {
+    border: 2px solid rgba(229, 232, 235, 0.5);
+    border-radius: 12px;
+    width: fit-content;
+    display: flex;
+}
+
+.inAhLbtns button {
+    color: rgb(4, 17, 29);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.inAhLbtns button:hover {
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 10px;
+    transition: box-shadow 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+
+.inAhLbtns button:nth-child(1) {
+    border-color: rgb(229, 232, 235);
+    height: 48px;
+    box-shadow: none;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.inAhLbtns button:nth-child(2) {
+    border-color: rgb(229, 232, 235);
+    height: 48px;
+    /* background: rgb(255, 255, 255); */
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.inAhLbtns button.inactive{
+    background-color: transparent;
+}
+.inAhLbtns button.active{
+    background-color: rgba(229, 232, 235, 0.5);
+}
+.inAhLbtnsIcon {
+    font-size: 22px !important;
+    color: rgb(4, 17, 29) !important;
+}
+#dark .inAhLbtnsIcon{
+    color: rgba(229, 232, 235, 0.5) !important;
+}
+.assetMain {
+    width: 100%;
+    display: flex;
+}
+
+.assetMainSidebar {
+    flex-direction: column;
+    position: sticky;
+    top: 138px;
+    height: calc(100vh - 138px);
+    width: 500px;
+    overflow: auto;
+    padding-top: 8px;
+}
+
+.inAmS {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.inAmS button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+}
+
+#dark .inAmS button {
+    background-color: #202324;
+    color: rgb(255, 255, 255);
+}
+
+.inAmS button:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+#dark .inAmS button:hover {
+    background-color: #dcdcdc09;
+}
+
+.assetMainContent {
+    width: 100%;
+}
+
+.aMcHeader {
+    width: 100%;
+    padding: 8px;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.itemsCounters {
+    font-weight: 400;
+    font-size: 16px;
+    color: inherit;
+}
+
+#dark .itemsCounters {
+    color: rgb(255, 255, 255);
+}
+
+.aMcDisplay {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.aMcDisplay.grid {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+}
+
+.aMcDisplay .aMcDBox {
+    max-width: 352px;
+    display: flex;
+    flex-direction: column;
+    /* height: 100%; */
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 8%) 0px 4px 15px;
+    transition: box-shadow 0.25s ease-in-out 0s;
+}
+
+#dark .aMcDisplay .aMcDBox {
+    transition: background-color 0.25s ease-in-out 0s;
+    background-color: #343940;
+}
+
+.aMcDBoxImg {
+    width: 100%;
+    height: 302px;
+    overflow: hidden;
+    transition: all 0.1s ease;
+}
+
+.aMcDBoxImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.aMcDisplay .aMcDBox:hover .aMcDBoxImg img {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+}
+
+
+.aMcDBoxArticle {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 100%;
+    min-height: 150px;
+    padding: 12px 16px;
+}
+
+#dark .aMcDBoxArticle {
+    background-color: #343940;
+}
+
+#dark .aMcDBox:hover .aMcDBoxArticle {
+    background-color: rgb(76, 80, 92);
+    transition: .3s ease-in-out;
+}
+
+.aMcBa .colName {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    color: rgb(4, 17, 29);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#dark .aMcBa .colName {
+    color: rgb(255, 255, 255);
+}
+
+.aMcDBoxArticle p {
+    font-weight: 600;
+    font-size: 12px;
+    color: rgb(4, 17, 29);
+    padding: 0;
+    margin: 0;
+}
+
+#dark .aMcDBoxArticle p {
+    color: rgb(229, 232, 235);
+}
+
+.aMcDBoxArticle .price p {
+    color: rgb(53, 56, 64);
+}
+
+.inPrice {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: rgb(53, 56, 64);
+    font-weight: 600;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#dark .inPrice {
+    color: rgb(229, 232, 235);
+}
+
+.aMcDBoxArticle .price img {
+    width: 12px;
+}
+
+.aMcDBoxArticle .time {
+    font-weight: 500;
+    font-size: 12px;
+    color: rgb(112, 122, 131);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#dark .aMcDBoxArticle .time {
+    color: rgb(138, 147, 155);
+}
+
+.buyBtn {
+    width: 100%;
+    height: 36px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0px;
+    position: absolute;
+    bottom: -100px;
+    transition: bottom 0.25s ease-in-out 0s;
+}
+
+.buyBtn button {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+    padding: 17px 24px;
+    background-color: rgb(32, 129, 226);
+    border: 2px solid rgb(32, 129, 226);
+    color: rgb(255, 255, 255);
+    border-radius: 0px 0px 10px 10px;
+    /* display: none; */
+}
+
+.buyBtn button:hover:not([disabled]) {
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 142, 238);
+    border-color: rgb(46, 142, 238);
+}
+
+.aMcDBox:hover .buyBtn {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}

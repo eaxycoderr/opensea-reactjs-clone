@@ -1,0 +1,31 @@
+.login {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.inLogin {
+    max-width: 600px;
+    margin: auto;
+}
+
+.connectWalletListsPage .cWLDheader {
+    border: none;
+    padding: 0;
+    height: 0;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.connectWalletListsPage .cWLDheader span{
+    font-size: 24px;
+}
+.connectWalletListsPage .cWLDb{
+    padding: 0;
+}
+.connectWalletListsPage .cWLDhText{
+    margin-bottom: 30px;
+}
+#light .connectWalletListsPage .cWLDheader {
+    border: none;
+}

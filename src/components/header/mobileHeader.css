@@ -1,0 +1,195 @@
+.mobileNavBar, .MfooterNav {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .mobileNavBar {
+        display: block;
+        position: fixed;
+        width: 35%;
+        right: 0;
+        top: 75px;
+        background-color: #fff;
+        z-index: 90;
+        margin-right: 0px;
+        padding-top: 0;
+        height: 100%;
+        filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 4px 4px);
+    }
+
+    #dark .mobileNavBar {
+        background: rgb(48, 51, 57);
+    }
+
+    .mobileNavBar.open {
+        right: 0;
+        transition: 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+    }
+
+    .navOverlay.open {
+        display: block;
+        transition: 0.5s ease-in-out 0s, opacity 0.5s ease-in-out 0s;
+    }
+
+    .mobileNavBar ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        height: 75%;
+    }
+
+    .mobileNavBar ul li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 18px;
+        gap: 8px;
+        width: 100%;
+        font-weight: 600;
+        color: #04111DBF;
+        padding: 20px 0px;
+        cursor: pointer;
+        padding: 25px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #dark .mobileNavBar ul li, #dark .MmoonIcon {
+        color: rgba(255, 255, 255, 0.75);
+    }
+
+    .mobileNavBar ul li:hover {
+        color: rgb(4, 17, 29);
+    }
+
+    .mobileNavBar ul li div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .mobileNavBar ul li .MobileIcons, .mobileNavBar ul li .moonIcon {
+        font-size: 35px;
+        display: flex;
+        align-items: center;
+    }
+
+    .M_site_btn {
+        margin-top: 20px;
+        padding: 25px;
+    }
+
+    .nextMenu {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        overflow: auto;
+        background: rgb(251, 253, 255);
+        padding-bottom: 80px;
+    }
+
+    #dark .nextMenu{
+        background: rgb(48, 51, 57);
+    }
+    .nextMenu3 {
+        z-index: 1;
+    }
+
+    .nMnHeader {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        height: 80px;
+        padding: 0px 8px;
+        flex-shrink: 0;
+        border-bottom: 1px solid rgb(229, 232, 235);
+        color: rgba(4, 17, 29, 0.75);
+        background-color: #fff;
+    }
+
+    #dark .nMnHeader {
+        background-color: #202225;
+        border-bottom: 1px solid rgb(21, 27, 34);
+        color: rgba(255, 255, 255, 0.75);
+    }
+    .nextMenuList ul li {
+        padding: 0px 20px;
+        height: 72px;
+    }
+
+    .nextMenuList ul li a {
+        color: rgba(4, 17, 29, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    #dark .nextMenuList ul li a {
+        color: rgba(255, 255, 255, 0.75);
+    }
+    .nextMenuList ul li a svg {
+        width: 30px;
+        margin-right: 10px;
+    }
+  
+    #dark .nextMenuList ul li a svg circle {
+        fill: rgb(48, 51, 57);
+        stroke: rgb(48, 51, 57);
+    }
+    #light .nextMenuList ul li a svg circle {
+        fill: rgb(251, 253, 255);
+        stroke: rgb(251, 253, 255);
+    }
+    .nextMenuList ul li img {
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .MfooterNav {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        min-height: 165px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding-bottom: 20px;
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+
+    #dark .MfooterNav {
+        background-color: rgb(32, 34, 37);
+    }
+
+    .in_MfooterNav {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 60px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .mobileNavBar {
+        width: 100%;
+    }
+
+    .M_site_btn {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .MfooterNav {
+        border-top: 1px solid rgba(128, 128, 128, 0.164);
+    }
+}

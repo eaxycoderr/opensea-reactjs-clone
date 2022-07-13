@@ -1,0 +1,266 @@
+.bannerContainer {
+    position: relative;
+}
+
+.BlurBg {
+    min-height: 700px;
+    background-image: url("https://lh3.googleusercontent.com/ww-PqtSiBG7aCNk4lAqw-ibenlcLKdmqsoCXenDDDagM2W9rQHoDVVzAoQBe9QQhElfy44G5u77ujePfWL8WtUkV05f_bAo6BR7Q=s550");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.3;
+    filter: blur(8px);
+    -webkit-mask: linear-gradient(rgb(255, 255, 255), transparent);
+    background-color: rgb(32, 34, 37);
+
+}
+
+.banner {
+    position: absolute;
+    top: 120px;
+    width: 100%;
+}
+
+.in-banner {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1270px;
+    margin: auto;
+    padding: 0px 20px 0px 20px;
+}
+
+.in-banner div {
+    width: 100%;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.article h1 {
+    font-weight: 600;
+    font-size: 45px;
+}
+
+#dark .article h1 {
+    color: rgb(255, 255, 255);
+}
+
+.article span {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(138, 147, 155);
+    max-width: 400px;
+}
+
+.bannerButton {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bannerButton a {
+    width: 167px;
+}
+
+.exploreBtn:hover {
+    background-color: rgb(46, 142, 238);
+    border-color: rgb(46, 142, 238);
+}
+
+.createBtn {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 232, 235);
+    color: rgb(32, 129, 226);
+}
+
+#dark .createBtn {
+    background-color: rgb(53, 56, 64);
+    border: 2px solid rgb(53, 56, 64);
+    color: rgb(255, 255, 255);
+}
+
+.createBtn:hover {
+    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 0.05);
+}
+
+.learnMoreBanner {
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: rgb(32, 129, 226);
+    gap: 10px;
+}
+
+.rightBanner {
+    overflow: hidden;
+    border-radius: 10px;
+    margin-left: 30px;
+    max-width: 550px;
+    height: 100%;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 10px 0px;
+}
+
+.imgContainer {
+    height: 415px;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bDIfooter {
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 16px;
+    line-height: 1.5;
+}
+#dark .bDIfooter{
+    background-color: #303238;
+}
+.bDIfooterL {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+.avatar {
+    width: 40px !important;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.nftsTitleDesc {
+    margin-left: 15px;
+}
+
+.nftsTitleDesc .title {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    color: rgb(4, 17, 29);
+}
+#dark .nftsTitleDesc .title {
+    color: rgb(255, 255, 255);
+}
+.nftsTitleDesc .desc {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(32, 129, 226);
+}
+
+.Mobile_learnMoreBanner {
+    display: none;
+}
+
+.bannerInfo {
+    cursor: pointer;
+    color: rgb(112, 122, 131);
+}
+
+.tool_lip {
+    padding: 10px;
+    position: absolute;
+    right: 20px;
+    border-radius: 10px;
+    margin-top: -100px;
+    background-color: rgb(24, 24, 24);
+    color: #fff;
+    font-weight: 600;
+}
+
+.tool_lip:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 200px;
+    border-style: solid;
+    border-width: 10px 10px 0;
+    border-color: rgb(24, 24, 24) transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+
+
+/* banner responsiveness */
+@media screen and (max-width: 1023px) {
+    .banner {
+        top: 81px;
+    }
+
+    .in-banner {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .article {
+        max-width: 550px;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .article h1 {
+        font-size: 32px;
+        max-width: 550px;
+    }
+
+    .article span {
+        font-size: 18px;
+        max-width: 400px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .bannerButton {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .rightBanner {
+        margin: 0;
+        max-width: 355px;
+    }
+
+    .imgContainer {
+        height: 300px;
+    }
+
+    .learnMoreBanner {
+        display: none;
+    }
+
+    .Mobile_learnMoreBanner {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+
+    .site_button {
+        width: 120px;
+    }
+}

@@ -1,0 +1,75 @@
+.sCateG {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    height: 100%;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.sCateG h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(4, 17, 29);
+    text-align: center;
+}
+
+#dark .sCateG h3 {
+    color: rgb(255, 255, 255);
+}
+
+.sBanner {
+    width: 100%;
+    height: 220px;
+}
+
+.sBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sHeader {
+    text-align: center;
+    border-bottom: 1px solid rgb(229, 232, 235);
+}
+#dark .sHeader{
+    border-bottom: 1px solid rgb(21, 27, 34);
+}
+.sHeader h1 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: rgb(4, 17, 29);
+}
+
+#dark .sHeader h1 {
+    color: rgb(255, 255, 255);
+}
+
+.sHeader p {
+    color: rgb(112, 122, 131);
+    font-size: 15px;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.sHeader a {
+    color: rgb(32, 129, 226);
+}
+
+#dark .sHeader p {
+    color: rgb(138, 147, 155);
+}
+
+.sMain {
+    padding-top: 20px;
+}
+
+.inSCateG {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-top: 30px;
+}

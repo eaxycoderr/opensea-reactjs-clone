@@ -1,0 +1,52 @@
+.in-sOne{
+    background-image: url("https://i.im.ge/2022/07/04/uUVwb6.png");
+    width: 100%;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.in-sOne h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(53, 56, 64);
+}
+.in-sOne button{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 100px;
+}
+
+@media screen and (max-width: 1023px) {
+    .sOne{
+        margin-top: 210px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .in-sOne{
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 360px;
+        margin: auto;
+    }
+    .in-sOne h3{
+        font-size: 14px;
+        max-width: 120px;
+    }
+    .in-sOne button{
+        padding: 11px 24px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sOne{
+        padding-left: 23px;
+        padding-right: 23px;
+    }
+}

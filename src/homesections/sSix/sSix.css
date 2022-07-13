@@ -1,0 +1,80 @@
+.sSix{
+    margin-top: 40px;
+    margin-bottom: 120px;
+    
+}
+.sSix .sTitle{
+    text-align: center;
+}
+.inSsix{
+    margin-top: 50px;
+}
+.inSsix a{
+    display: inline-block;
+    padding: 10px;
+}
+.inSsixBox{
+    border: 1px solid rgb(229, 232, 235);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+#dark .inSsixBox{
+    background-color: #303238;
+    border: none;
+}
+.inSsixBox:hover{
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    transition: all 0.1s ease 0s;
+}
+.inSsixBoxImg{
+    width: 100%;
+    height: 265px;
+    border-bottom: 1px solid rgb(229, 232, 235);
+}
+.inSsixBoxImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.inSsixBoxTxt{
+    padding: 10px;
+}
+.inSsixBoxTxt p{
+    margin: 10px 20px 10px 16px;
+    height: 50px;
+    overflow: hidden;
+    color: rgb(53, 56, 64);
+    font-weight: 600;
+    font-size: 16px;
+}
+#dark .inSsixBoxTxt p{
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 1199px) {
+    .inSsix{
+        max-width: 800px;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width: 815px) {
+    .inSsix{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .sSev{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .inSsix{
+        max-width: 100%;
+    }
+}

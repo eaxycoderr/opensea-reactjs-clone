@@ -1,0 +1,103 @@
+.modalOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0px;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0s;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.modal {
+    position: fixed;
+    top: 43%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    border-radius: 16px;
+    /* background: rgb(38, 43, 47); */
+    background-color: #fff;
+    max-height: calc(100vh - 0px);
+    max-width: calc(560px - 0px);
+    padding: 0px 24px 24px 24px;
+}
+#dark .modal{
+    background-color: #262B2F;
+}
+.modalHeader{
+    padding: 15px 0px;
+}
+.modalHeader h1{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(4, 17, 29);
+}
+#dark .modalHeader h1{
+    color: rgb(255, 255, 255);
+}
+.closeIcon{
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+    color: rgb(53, 56, 64);
+}
+#dark .closeIcon{
+    color: rgb(138, 147, 155);
+}
+.modalArticle{
+    font-weight: 400;
+    color: rgb(53, 56, 64);
+    overflow-y: auto;
+}
+#dark .modalArticle{
+    color: rgb(138, 147, 155);
+}
+.modalArticle ol{
+    padding: 0;
+    margin: 20px;
+}
+.modalArticle ol li{
+    list-style-type: decimal !important;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.modalArticle p{
+    font-size: 16px;
+}
+#dark .modalArticle p{
+    color: rgb(255, 255, 255);
+}
+.modalFooter{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.modalFooter a{
+    width: 100%;
+    padding: 12px 24px;
+}
+.modalF_icon{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .modalHeader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+    .closeIcon{
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}

@@ -1,0 +1,270 @@
+.footer {
+    width: 100%;
+    background-color: rgb(24, 104, 183);
+    padding-left: 120px;
+    padding-right: 120px;
+}
+#dark .footer{
+    background-color: rgb(4, 17, 29);
+}
+.inTf-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 64px;
+    border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+}
+
+.inTf-top .inTf-topBox {
+    width: 100%;
+    flex: 1;
+    min-height: 100px;
+}
+
+.fhH3 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.inTf-topBox p {
+    font-size: 16px;
+    color: rgb(251, 253, 255);
+}
+
+.fInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fInput input {
+    border-radius: 10px;
+    border: 2px solid rgb(229, 232, 235);
+    color: rgb(4, 17, 29);
+    width: 100%;
+    padding: 12px;
+    height: 48px;
+    font-size: 16px;
+    outline: none;
+}
+#dark .fInput input {
+    background-color: transparent;
+    border: 2px solid rgb(76, 80, 92);
+    color: rgb(255, 255, 255);
+}
+.fInput button {
+    margin: 0px 8px 8px;
+    height: 50px;
+    width: 162px;
+    background-color: rgb(32, 129, 226);
+    border: 2px solid rgb(32, 129, 226);
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.inFs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.inFs div {
+    margin-right: 12px;
+    margin-top: 8px;
+    width: 54px;
+    height: 54px;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inFs svg {
+    max-width: 30px;
+    margin: auto;
+}
+
+.middleFooter {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(229, 232, 235, 0.25);
+    gap: 10px;
+}
+
+.mfLeft {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.mfLeft img {
+    height: 44px;
+    width: 44px;
+}
+
+.mfLeft a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.mfLeft p {
+    font-size: 16px;
+    color: rgb(251, 253, 255);
+    padding: 0;
+    margin: 0;
+}
+
+.mfRight {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 72px;
+}
+
+.mfRbox {
+    width: 200px;
+}
+
+.mfRbox h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.mfRboxH3 {
+    margin-top: 48px;
+}
+
+.mfRbox ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mfRbox ul li {
+    margin-top: 12px;
+}
+
+.mfRbox ul li a {
+    color: rgb(251, 253, 255);
+    font-size: 14px;
+}
+
+.mfRbox ul li a:hover {
+    font-weight: 500;
+}
+
+.bottomFooter {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bottomFooter p {
+    color: rgb(251, 253, 255);
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.bottomFooter a {
+    color: rgb(251, 253, 255);
+    margin-top: 0px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.bottomFooter a:hover {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1199px) {
+    .inTf-top {
+        flex-direction: column;
+    }
+
+    .inTf-topBox {
+        text-align: center;
+    }
+
+    .social {
+        max-width: 500px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .middleFooter {
+        flex-direction: column;
+    }
+
+    .mfLeft {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .mfRight {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 814px) {
+    .footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .mfRight {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 40px;
+        margin-top: 20px;
+    }
+
+    .mfRbox {
+        width: 100%;
+        text-align: center;
+    }
+    .bottomFooter{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .inFs {
+        justify-content: center;
+    }
+}

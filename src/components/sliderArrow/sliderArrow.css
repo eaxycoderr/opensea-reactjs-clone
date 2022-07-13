@@ -1,0 +1,44 @@
+.slide-show #nextArrow, .slide-show #prevArrow {
+    top: 355px;
+}
+
+#nextArrow, #prevArrow {
+    color: rgb(4, 17, 29) !important;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(229, 232, 235);
+    font-size: 55px !important;
+    font-weight: 600 !important;
+    line-height: 22px !important;
+    cursor: pointer;
+    top: 185px;
+    z-index: 1;
+    padding: 20px;
+}
+#dark #nextArrow, #dark #prevArrow {
+    box-shadow: rgb(0 0 0 / 15%) 0px 4px 10px;
+    background-color: rgb(48, 51, 57);
+    color: rgb(255, 255, 255) !important;
+    border: none;
+}
+
+#nextArrow {
+    right: -17px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#prevArrow {
+    right: -17px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+ 
+.inSsix #nextArrow, .inSsix #prevArrow {
+    top: 255px;
+}
+.trending_show_slide #nextArrow, .trending_show_slide #prevArrow {
+    top: 100px;
+}
+

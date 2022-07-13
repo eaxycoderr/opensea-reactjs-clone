@@ -1,0 +1,358 @@
+.inAmSdrop {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(229, 232, 235, 0.5);
+    padding-bottom: 15px;
+}
+
+#dark .inAmSdrop {
+    border-bottom: 1px solid rgb(53, 56, 64)
+}
+
+.inAmSdrop .sBDropCont {
+    border-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: border-color 0.2s ease-in 0s;
+    max-height: 400px;
+}
+
+/* width */
+.sBDropCont::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.sBDropCont::-webkit-scrollbar-track {
+    background: #fcfafa;
+}
+
+/* Handle */
+.sBDropCont::-webkit-scrollbar-thumb {
+    background: rgb(218, 218, 218);
+}
+
+/* Handle on hover */
+.sBDropCont::-webkit-scrollbar-thumb:hover {
+    background: rgb(231, 231, 231);
+}
+
+.inAmSdrop li label {
+    width: 100%;
+    display: flex;
+    height: 48px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    border-radius: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(4, 17, 29);
+    padding: 0px 10px;
+    transition: .2s ease-in-out;
+}
+
+#dark .inAmSdrop li label {
+    background-color: #202324;
+    color: rgb(255, 255, 255);
+}
+
+.inAmSdrop li input {
+    appearance: none;
+    border: 2px solid rgb(229, 232, 235);
+    cursor: pointer;
+    height: 24px;
+    min-width: 24px;
+    max-width: 24px;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    transition: box-shadow 0.2s ease 0s;
+    /* outline: none; */
+}
+
+#dark .inAmSdrop li input {
+    background-color: #202324;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(76, 80, 92);
+}
+
+.inAmSdrop.quantity li input {
+    border-radius: 50%;
+}
+
+.inAmSdrop li input:checked {
+    background-color: rgb(32, 129, 226);
+    border: 2px solid rgb(32, 129, 226);
+}
+
+#dark .inAmSdrop li input:checked {
+    background-color: rgb(32, 129, 226);
+    border: 2px solid rgb(32, 129, 226);
+}
+
+.inAmSdrop.quantity li input:checked {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(32, 129, 226);
+}
+
+#dark .inAmSdrop.quantity li input:checked {
+    background-color: #202324;
+    border: 2px solid rgb(32, 129, 226);
+}
+
+.checkB {
+    position: relative;
+}
+
+.doneIcon {
+    color: #fff;
+    font-size: 20px !important;
+    position: absolute;
+    left: 6px;
+    top: 4px;
+    visibility: hidden;
+}
+
+.circleIcon {
+    color: rgb(32, 129, 226);
+    font-size: 18px !important;
+    position: absolute;
+    left: 7px;
+    top: 6px;
+    visibility: hidden;
+}
+
+input.checkInput:checked~.circleIcon,
+input.checkInput:checked~.doneIcon {
+    visibility: visible;
+}
+
+.inAmSdrop li label:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+.priceCheck {
+    padding-top: 20px;
+}
+
+.priceCheck form button {
+    justify-content: center !important;
+    background-color: #A6CDF3;
+    color: #fff;
+    pointer-events: none;
+}
+
+.priceCheck form button:hover {
+    background-color: #A6CDF3;
+}
+
+#dark .priceCheck form button {
+    background-color: rgba(53, 56, 64, 0.6);
+}
+
+.inPc {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(4, 17, 29);
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.iPbox, .iPboxMl {
+    background: rgb(255, 255, 255);
+    width: 122px;
+    height: 48px;
+    border: 2px solid rgb(229, 232, 235);
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#dark .iPbox, .iPboxMl {
+    background-color: #202324;
+    border: 2px solid rgb(76, 80, 92);
+}
+#dark .iPbox:hover, .iPboxMl:hover {
+    border: 2px solid #788a9ccb;
+}
+
+.iPbox input, .iPboxMl input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgb(4, 17, 29);
+}
+
+#dark .iPbox input, #dark .iPboxMl input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.iPboxMl {
+    width: 102px;
+}
+
+#dark .inPc span {
+    color: rgb(255, 255, 255);
+}
+
+.iPboxMl input {
+    font-weight: 400;
+}
+
+.iPbox input {
+    cursor: pointer;
+}
+
+.iPbox:hover {
+    box-shadow: rgb(0 0 0 / 5%) 0px 2px 10px;
+    transition: box-shadow 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+#dark .aRdown{
+    color:  rgb(245, 243, 243);
+    transition: box-shadow 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+#dark .inPc:hover .iPbox .aRdown{
+    color:  rgb(76, 80, 92);
+    transition: .2s ease-in-out;
+}
+.dropDfilterInpBox {
+    border-width: 2px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid rgb(229, 232, 235);
+    color: rgb(4, 17, 29);
+    padding: 12px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#dark .dropDfilterInpBox {
+    border: 2px solid rgb(76, 80, 92);
+}
+
+.dropDfilterInpBox:hover {
+    box-shadow: rgb(0 0 0 / 5%) 0px 2px 10px;
+    transition: box-shadow 0.25s ease-in-out 0s, border-color 0.25s ease-in-out 0s;
+}
+
+.dropDfilterInpBox:focus-within {
+    border: 2px solid rgba(4, 17, 29, 0.75);
+}
+
+#dark .dropDfilterInpBox:focus-within {
+    border: 2px solid rgb(76, 80, 92);
+}
+
+.dropDfilterInpBox input {
+    background-color: transparent;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: inherit;
+    line-height: inherit;
+    min-height: inherit;
+}
+
+#dark .dropDfilterInpBox input {
+    color: rgb(255, 255, 255);
+}
+
+.colCheckList, .cClL {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cClL {
+    gap: 10px;
+}
+
+.cClLImg {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: rgb(229, 232, 235);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#dark .cClLImg {
+    background-color: #202324;
+    border: 1px solid rgb(76, 80, 92);
+}
+
+.cClLImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cClLn_i {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.cClLname {
+    max-width: 110px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(4, 17, 29);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0;
+    margin: 0;
+}
+
+#dark .cClLname {
+    color: rgb(255, 255, 255);
+}
+
+.cClLn_i .verifyIcon {
+    font-size: 18px !important;
+    color: rgb(32, 129, 226);
+}
+
+.cClR {
+    width: 100%;
+    text-align: right;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(112, 122, 131);
+    margin-right: 10px;
+}
+
+.chains .cClL {
+    justify-content: flex-start;
+}
+
+.chains .cClLImg {
+    border: none;
+    background-color: transparent;
+}
+
+.category .cClLname {
+    max-width: 100%;
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.im.ge/2022/07/09/uHnczM.png",
+    "title": "All NFTs",
+     "explorePath": "/assets"
+  },
+  {
+    "id": 2,
+    "img": "https://i.im.ge/2022/07/09/uHn8FY.png",
+    "title": "Solana NFTs",
+     "explorePath": "/solana-collections"
+  },
+  {
+    "id": 3,
+    "img": "https://i.im.ge/2022/07/09/uHnWR4.png",
+    "title": "Art",
+     "explorePath": "/category/art"
+  },
+  {
+    "id": 4,
+    "img": "https://i.im.ge/2022/07/09/uHnBW0.png",
+    "title": "Collectibles",
+     "explorePath": "/category/collectibles"
+  },
+  {
+    "id": 5,
+    "img": "https://i.im.ge/2022/07/09/uHn4jW.png",
+    "title": "Domain Names",
+     "explorePath": "/category/domain-names"
+  },
+  {
+    "id": 6,
+    "img": "https://i.im.ge/2022/07/09/uHnnOr.png",
+    "title": "Music",
+     "explorePath": "/category/music"
+  },
+  {
+    "id": 7,
+    "img": "https://i.im.ge/2022/07/09/uHnf3p.png",
+    "title": "Photography",
+     "explorePath": "/category/photography"
+  },
+  {
+    "id": 8,
+    "img": "https://i.im.ge/2022/07/09/uHnvzm.png",
+    "title": "Sports",
+     "explorePath": "/category/sports"
+  },
+  {
+    "id": 9,
+    "img": "https://i.im.ge/2022/07/09/uHnHs1.png",
+    "title": "Trading Cards",
+     "explorePath": "/category/trading-cards"
+  },
+  {
+    "id": 10,
+    "img": "https://i.im.ge/2022/07/09/uHnk4P.png",
+    "title": "Utility",
+     "explorePath": "/category/utility"
+  },
+  {
+    "id": 11,
+    "img": "https://i.im.ge/2022/07/09/uHnptf.png",
+    "title": "Virtual Worlds",
+     "explorePath": "/category/virtual-worlds"
+  }
+]

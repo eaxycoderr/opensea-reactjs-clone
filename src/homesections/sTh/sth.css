@@ -1,0 +1,118 @@
+.Sth {
+    margin-top: 100px;
+}
+
+.inSth-title {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.inSth-title .sTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow-_-down {
+    cursor: pointer;
+}
+
+.inSth-timeDropDown {
+    color: rgb(32, 129, 226);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.inSth-timeDropDown p {
+    font-weight: 600;
+    font-size: 24px;
+    color: rgb(32, 129, 226);
+    margin: 0;
+    padding: 0;
+}
+
+.inSth-timeDropDown:hover>p {
+    color: rgb(24, 104, 183);
+    cursor: pointer;
+}
+
+.topCollDuration {
+    position: absolute;
+    overflow-y: auto;
+    box-shadow: rgb(0 0 0 / 16%) 0px 4px 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(4, 17, 29);
+    max-width: initial;
+    min-width: 220px;
+    max-height: 350px;
+    border-radius: 10px;
+    top: 60px;
+}
+
+#dark .topCollDuration {
+    background-color: rgb(48, 51, 57);
+}
+
+.topCollDuration ul {
+    padding: 0;
+    margin: 0;
+}
+
+.topCollDuration ul li {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.418);
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(4, 17, 29);
+    padding: 15px;
+    cursor: pointer;
+}
+
+#dark .topCollDuration ul li {
+    color: rgb(255, 255, 255);
+}
+
+.topCollDuration ul li:hover {
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    background-color: rgb(251, 253, 255);
+}
+
+#dark .topCollDuration ul li:hover {
+    transition: all 0.2s ease 0s;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
+    background-color: rgb(38, 43, 47);
+}
+
+.bRb {
+    border: none !important;
+}
+
+.goToRankingBtnBox {
+    display: flex;
+}
+
+.goToRankingBtn {
+    margin: 40px auto 0px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 550px) {
+    .Sth {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 431px) {
+    .inSth-title {
+        flex-direction: column;
+        gap: 0;
+    }
+}

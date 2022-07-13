@@ -1,0 +1,110 @@
+.sTw {
+    margin-top: 100px;
+}
+.in-sTw .sTitle {
+    text-align: center;
+}
+.slide-show{
+    margin-top: 55px;
+}
+.slideBox{
+    padding: 7px;
+}
+.in-sBc{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    display: inline-block;
+    border: 1px solid rgb(229, 232, 235);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.in-sBc img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.in-sBc-top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.in-sBc-top .PromoCard--sale-time {
+    padding: 2px 12px 2px 12px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.in-sBc-bottom {
+    position: relative;
+    padding: 20px 16px 16px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.SlideTitle {
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.slideDesc {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 90%;
+    margin: 12px 0px 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #58A1E9 !important;
+}
+.slick-dots li button:before {
+    color: #58A1E9 !important;
+}
+@media screen and (max-width: 464px) {
+    .sTw {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+@media screen and (max-width: 1196px) {
+  .slide-show{
+    max-width: 740px;
+    width: 100%;
+    margin: auto;
+    margin-top: 55px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .slide-show{
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.im.ge/2022/07/07/uKrgS8.png",
+    "title": "Art",
+     "categoryPath": "/category/art"
+  },
+  {
+    "id": 2,
+    "img": "https://i.im.ge/2022/07/07/uKSTvq.png",
+    "title": "Collectibles",
+     "categoryPath": "/category/collectibles"
+  },
+  {
+    "id": 3,
+    "img": "https://i.im.ge/2022/07/07/uKSh0J.png",
+    "title": "Domain Names",
+     "categoryPath": "/category/domain-names"
+  },
+  {
+    "id": 4,
+    "img": "https://i.im.ge/2022/07/07/uKSpnT.png",
+    "title": "Music",
+     "categoryPath": "/category/music"
+  },
+  {
+    "id": 5,
+    "img": "https://i.im.ge/2022/07/07/uKqPih.png",
+    "title": "Photography",
+     "categoryPath": "/category/photography"
+  },
+  {
+    "id": 6,
+    "img": "https://i.im.ge/2022/07/07/uKq0A6.png",
+    "title": "Sports",
+     "categoryPath": "/category/sports"
+  },
+  {
+    "id": 7,
+    "img": "https://i.im.ge/2022/07/07/uKqmw9.png",
+    "title": "Trading Cards",
+     "categoryPath": "/category/trading-cards"
+  },
+  {
+    "id": 8,
+    "img": "https://i.im.ge/2022/07/07/uKqiaz.png",
+    "title": "Utility",
+     "categoryPath": "/category/utility"
+  },
+  {
+    "id": 9,
+    "img": "https://i.im.ge/2022/07/07/uKqIhJ.png",
+    "title": "Virtual Worlds",
+     "categoryPath": "/category/virtual-worlds"
+  }
+]

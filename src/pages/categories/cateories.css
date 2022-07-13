@@ -1,0 +1,80 @@
+.categories .sHeader {
+    text-align: center;
+    border: none;
+}
+
+#dark .categories .sHeader {
+    text-align: center;
+    border: none;
+}
+
+.categories .sHeader h1 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0px;
+    color: rgb(4, 17, 29);
+}
+
+#dark .sHeader h1 {
+    color: rgb(255, 255, 255);
+}
+
+.sCateG_description {
+    color: rgb(112, 122, 131);
+    text-align: center;
+    max-width: 800px;
+    max-height: 150px;
+    margin: auto;
+    word-break: break-word;
+    -webkit-mask: linear-gradient(rgb(255, 255, 255) 45%, transparent);
+    overflow: hidden;
+    transition: max-height 100ms ease 0s;
+    padding: 20px;
+}
+
+.sCateG_description p {
+    padding-top: 0;
+    font-size: 16px;
+    color: rgb(138, 147, 155);
+}
+
+.sCateG_description.expand {
+    max-height: 312px;
+    -webkit-mask: linear-gradient(rgb(255, 255, 255) 100%, transparent);
+}
+
+.sHeader .sCateG_descExpand {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.2s ease 0s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    margin-top: 10px;
+}
+
+.sHeader .sCateG_descExpand:hover {
+    background-color: rgba(138, 147, 155, 0.06);
+}
+
+.sCateG_descExpand .aRdown {
+    color: rgb(138, 147, 155);
+}
+
+.sCateG_descExpand .aRdown:hover {
+    color: rgb(112, 122, 131);
+}
+
+.sHeader a {
+    color: rgb(32, 129, 226);
+}
+
+#dark .sHeader p {
+    color: rgb(138, 147, 155);
+}

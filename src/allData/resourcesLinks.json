@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Help Center",
+     "resourcesPath": ""
+  },
+  {
+    "id": 2,
+    "title": "Platform Status",
+     "resourcesPath": ""
+  },
+  {
+    "id": 3,
+    "title": "Partners",
+     "resourcesPath": "/partners"
+  },
+  {
+    "id": 4,
+    "title": "Gas-Free Marketplace",
+     "resourcesPath": "/gas-free"
+  },
+  {
+    "id": 5,
+    "title": "Taxes",
+     "resourcesPath": "/tax-resources"
+  },
+  {
+    "id": 6,
+    "title": "Blog",
+     "resourcesPath": "/blog"
+  },
+  {
+    "id": 7,
+    "title": "Docs",
+     "resourcesPath": ""
+  },
+  {
+    "id": 8,
+    "title": "Newsletter",
+     "resourcesPath": "/blog/newsletter"
+  }
+]

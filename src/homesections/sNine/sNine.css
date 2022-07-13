@@ -1,0 +1,65 @@
+.sNine {
+    background-color: rgb(32, 129, 226);
+    width: 100%;
+}
+#dark .sNine{
+    background-color: rgba(4, 17, 29, 0.25);
+}
+.inSnine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+
+
+.footerSvgs {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerSvgs svg {
+    cursor: pointer;
+}
+#dark .footerSvgs svg{
+    fill: rgb(138, 147, 155);
+}
+.footerSvgs .BackedBy--logo:hover {
+    fill: rgb(251, 253, 255);
+}
+
+.jelQWJ .BackedBy--logos .BackedBy--logo:hover {
+    fill: rgb(251, 253, 255);
+}
+
+.BackedBy--logo, .YCombinatorLogo--letters {
+    height: 25px;
+    margin: 10px;
+    width: 150px;
+    fill: rgba(251, 253, 255, 0.75);
+    width: 126px;
+}
+
+.YCombinatorLogo--square {
+    fill: none;
+    stroke: rgba(251, 253, 255, 0.75);
+}
+@media screen and (max-width: 1199px) {
+    .footerSvgs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 500px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+@media screen and (max-width: 599px) {
+    .footerSvgs{
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 350px;
+    }
+}
